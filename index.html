@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Tp Labo3</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <a href="index.html"><img src="images/Logorojo.png"Logo Altered Carbon"></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="Episodios.html">Episodios</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="principal">
+            <!--<img src = "images/ACbanner.jpg" class="banner">-->
+            <video muted autoplay loop> 
+                <source src="./videos/ACTrailer.mp4" type="video/mp4">
+            </video>
+            
+            <div class="parrafos">
+                <h1>Altered Carbon.</h1>
+                <p>Es una serie de televisión estadounidense de ciencia ficción creada por Laeta Kalogridis y basada en la novela del
+                mismo nombre, traducida al español como Carbono alterado o Carbono modificado,nota escrita en 2002 por 
+                Richard Morgan. La primera temporada consta de diez episodios y se estrenó en Netflix el 2 de febrero de 2018.
+                Fue renovada para una segunda temporada, estrenada en 2020. En agosto de 2020 se anunció su cancelación sin 
+                final.</p>
+                <p>La serie fue encargada por Netflix en enero de 2016, quince años después de que la productora Laeta Kalogridis 
+                originalmente se hiciera con los derechos de la novela con la intención de producir un largometraje. Según 
+                Kalogridis, la naturaleza compleja de la novela y su material con una posible calificación R complicaban venderla
+                a los estudios.
+                La serie fue rodada en Vancouver y en la Columbia Británica en Canadá.​ Miguel Sapochnik dirigió el episodio 
+                piloto.</p>
+
+                <h3>Argumento</h3>
+                <p>Año 2384. La tecnología ha logrado vencer el mayor miedo humano: la muerte. Con la ayuda de las pilas corticales,
+                las personas pueden ser eternas. Es ahí donde almacenan sus recuerdos, su personalidad y en definitiva, todo lo 
+                que les hace ser auténticos y únicos, sobrepasando los límites físicos de un cuerpo que envejece y se desgasta. 
+                Da igual cuantos años pasen: siempre habrá una nueva funda que utilizar cuando se deteriore la anterior.
+                Lo que puede parecer un avance desmesurado, que coloque un punto y final a la mayor parte de los problemas 
+                relacionados con enfermedades y accidentes, no parece convencer del todo a un grupo de soldados de élite 
+                interestelares que deciden dar un golpe de Estado para terminar con el nuevo orden. Sin embargo, fracasan y 
+                Takeshi Kovacs es el último de los supervivientes.</p>
+
+                <h3>Directores</h3>
+                <p>Varios directores participaron en diferentes
+                episodios, incluyendo Miguel Sapochnik, Nick Hurran, y Uta Briesewitz, entre otros.
+                <strong>Temporada 1:</strong> Miguel Sapochnik: Primer episodio (Episodio Piloto) Nick Hurran: Episodio 2 y 3 Alex 
+                Graves: Episodio 4 y 6 Uta Briesewitz: 5 y 8 Andy Goddard: 7 Peter Hoar: 9 y 10 <strong>Temporada 2:</strong> Ciaran 
+                Donnelly: 1 y 2 M. J. Bassett: 3 M. J. R. Perry: 4 Jeremy Webb: 5 y 6 Salli Richardson-Whithfield: 7 y 8.</p>
+            
+            
+            <h3>Banda sonora</h3>
+            <p>La música para la serie fue compuesta por Jeff Russo. Compositor norteamericano nacido en 1969, fundador de la banda 
+            de rock acústica Low Stars y cofundador de la banda de rock Tonic.</p>
+            
+            </div>
+
+            <div class="banner-netflix">
+                <img class="imagen1" src="images/banner-netflix.jpg" alt="banner Altered Carbon">
+                <a href="https://www.netflix.com/ar/title/80097140" target="_blank"><img class="imagen2" src="images/netflix-logo.png" alt="Logo Netflix"></a>
+            </div>
+           
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/redes/facebook.png" alt="Facebook">
+        <img src="images/redes/twitter.png" alt="Twitter">
+        <img src="images/redes/youtube.png" alt="Youtube">
+        <img src="images/redes/instagram.png" alt="Instagram">
+        <h6>Diseñado por Alvarez Bruno</h6>
+    </footer>
+
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
