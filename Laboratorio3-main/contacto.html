@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Contacto - Altered Carbon</title>
+    <link rel="icon" type="image/png" href="images/altered_carbon_logo_.png">
+
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <a href="index.html"><img src="images/altered-carbon-logo-largo.png"Logo Altered Carbon"></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="episodios.html">Episodios</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+    
+        <section class="principal" id="contact_form">
+            <div class="parrafos"><h1>Formulario de contacto</h1></div>
+            <div class="parrafos">
+            
+                <h3>Escribinos y en breve nos pondremos en contacto contigo</h3>
+                
+                    <form>	
+                        <aside><img src="images/ACgif_Form.gif"></aside>
+                    <p>
+                        <label for="nombre" class="colocar_nombre">Nombre<span class="obligatorio">*</span></label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    
+                        <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    
+                        <label for="telefone" class="colocar_telefono">Teléfono</label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    		
+                        <label for="asunto" class="colocar_asunto">Asunto<span class="obligatorio">*</span></label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                    		
+                        <label for="mensaje" class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>                     
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                    	  								
+                    </p>
+
+                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>					           
+                    </form>
+                	
+            </div>	
+            
+            <div class="parrafos">
+                <h3>CONTACTA CON NOSOTROS</h3>
+                <p>
+                    <br><b>POR CORREO</b>
+                    <br>Calle falsa 123 – Piso 1 - Oficina 69 C1003AAO - Buenos Aires<br>
+                    <br><b>POR E-MAIL</b>
+                    <br>serie@carbonoalterado.com.ar<br>
+                    <br><b>POR TELEFONO</b>
+                    <br> (011) 4346-1607 (011) 4346-1807</p><br>
+            </div>
+         
+        </section>
+            
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/AltCarb/?locale=es_LA" target="_blank" ><img src="images/redes/facebook.png" alt="Facebook"></a>
+        <a href="https://x.com/altcarb?lang=es" target="_blank" ><img src="images/redes/twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/altcarb/" target="_blank" ><img src="images/redes/instagram.png" alt="Instagram"></a>
+        <a href="https://www.youtube.com/watch?v=wk5LZtW3zB4" target="_blank" ><img src="images/redes/youtube.png" alt="Youtube"></a>
+        <h6>&#169 Todos los derechos reservados. Diseñado por Alvarez Bruno</h6>
+    </footer>
+
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
