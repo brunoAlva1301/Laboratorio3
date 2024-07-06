@@ -12,18 +12,23 @@
 
 </head>
 <body>
+    <script type="text/javascript">
+        window.onload = function(){
+            document.getElementById("op2").style.background = '#200000';
+        }
+    </script>
     <header>
         <div class="contenedor">
-            <a href="index.html"><img src="images/altered-carbon-logo-largo.png"Logo Altered Carbon"></a>
+            <a href="index.html"><img id="logo1" src="images/altered-carbon-logo-largo.png" alt ="Logo Altered Carbon"><img id="logo2" src="images/altered-carbon-logo-corto" alt ="Logo Altered Carbon"></a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         <nav id="menu_bar" class="menu">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="personajes.html">Personajes</a></li>
-                <li><a href="episodios.html">Episodios</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="index.html" id="op0">Inicio</a></li>
+                <li><a href="personajes.html" id="op1">Personajes</a></li>
+                <li><a href="Episodios.html" id="op2">Episodios</a></li>
+                <li><a href="galeria.html" id="op3">Galeria</a></li>
+                <li><a href="contacto.html" id="op4">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -32,59 +37,185 @@
         <section class="principal">
             <div class="parrafos">
                 <h1>Episodios</h1>
-                <div class="selector-temporada">
-                    <label for="Temporada 1-select" class="label no-display">
-                        <span class="label-display"></span>
-                    </label>
+            </div>
+
+            <div class="parrafos">
+                <form class="sele">
+                    <select id="sele">
+                        <option value="1" selected>TEMPORADA 1</option>
+                        <option value="2">TEMPORADA 2</option>
+                    </select>
+                </form>
+            </div>
+
+            <!--TEMPORADA 1-->
+            <form class="temp1">
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/Retorno al pasado.jpg">
+                <div>
+                    <h3>Retorno al pasado</h3>
+                    <p>Takeshi Kovacs despierta en otro cuerpo 250 años después de morir y descubre que lo revivieron para que un titán de la industria resuelva su propio homicidio.<br></p>
+                    <p>59min</p>
                 </div>
             </div>
-            <div class="parrafos">
-                <h3>1 «Retorno al pasado»</h3>
-                <p>Takeshi Kovacs despierta en otro cuerpo 250 años después de morir y descubre que lo revivieron para que un titán de la industria resuelva su propio homicidio.</p>
-            </div>
-            <div class="parrafos">
-                <h3>2 «Ángel caído»</h3>
-                <p>La teniente Ortega juega al límite del reglamento para no perder de vista a Kovacs, que sigue el rastro del hombre que amenazó de muerte a Bancroft.</p>
-            </div>
-            <div class="parrafos">
-                <h3>3 «En un lugar solitario»</h3>
-                <p>Kovacs consigue a alguien para que le cuide la espalda durante el banquete en la casa de Bancroft, pero quizá no sea la mejor pareja. Ortega supervisa el entretenimiento.</p>
-            </div>
-            <div class="parrafos">
-                <h3>4 «La fuerza del mal»</h3>
-                <p>Kovacs recuerda su entrenamiento de Enviado para sobrevivir a la tortura de su captor. Ortega sorprende a su familia en el Día de los Muertos.</p>
-            </div>
-            <div class="parrafos">
-                <h3>5 «El hombre equivocado»</h3>
-                <p>Tras descubrir la identidad de su funda, Kovacs le exige una explicación a Ortega. Un dato de Poe abre la investigación del caso Bancroft.</p>
-            </div>
-            <div class="parrafos">
-                <h3>6 «El perro rabioso»</h3>
-                <p>Kovacs se acerca a una figura del pasado que detona pantallazos de su complicada relación con el Protectorado, la Rebelión y Quell.</p>
-            </div>
-            <div class="parrafos">
-                <h3>7 «El hombre con mi cara»</h3>
-                <p>Mientras el destino de Ortega pende de un hilo, Kovacs lanza un golpe de efecto contra los Bancroft y termina cara a cara con un rival inquietante.</p>
-            </div>
-            <div class="parrafos">
-                <h3>8 «Encuentro en la noche»</h3>
-                <p>El mundo de Kovacs se tambalea y pide un infiltrador para agilizar el caso de Bancroft. Ortega corre contra reloj para identificar a la mujer misteriosa.</p>
-            </div>
-            <div class="parrafos">
-                <h3>9 «Alma en la sombra»</h3>
-                <p>Sobre las ruinas de la devastación, Kovacs y sus aliados conjuran un plan temerario para infiltrarse en la Cabeza en las Nubes.</p>
-            </div>
-            <div class="parrafos">
-                <h3>10 «Los asesinos»</h3>
-                <p>Al mismo tiempo que surge una nueva figura heroica y salen a la luz más secretos, Kovacs queda arrinconado y se prepara para un duelo final en las alturas.</p>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/Ángel o diablo">
+                <div>
+                    <h3>¿Ángel o diablo?</h3>
+                    <p>La teniente Ortega juega al límite del reglamento para no perder de vista a Kovacs, que sigue el rastro del hombre que amenazó de muerte a Bancroft.<br></p>
+                    <p>57min</p>
+                </div>
             </div>
 
-
-            <div class="parrafos">
-                <h2>Temporada 2</h2>
-                <p>La segunda temporada se estreno el 27 de febrero del 2020 y tiene 8 episodios.
-                   </p>
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/La muerte en un beso.jpg">
+                <div>
+                    <h3>La muerte en un beso</h3>
+                    <p>Kovacs consigue a alguien para que le cuide la espalda durante el banquete en la casa de Bancroft, pero quizá no sea la mejor pareja. Ortega supervisa el entretenimiento.<br></p>
+                    <p>51min</p>
+                </div>
             </div>
+            
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/La fuerza del mal.jpg">
+                <div>
+                    <h3>La fuerza del mal</h3>
+                    <p>Kovacs recuerda su entrenamiento de Enviado para sobrevivir a la tortura de su captor. Ortega sorprende a su familia en el Día de los Muertos.<br></p>
+                    <p>50min</p>
+                </div>
+            </div>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/El hombre equivocado.jpg">
+                <div>
+                    <h3>El hombre equivocado</h3>
+                    <p>Tras descubrir la identidad de su funda, Kovacs le exige una explicación a Ortega. Un dato de Poe abre la investigación del caso Bancroft.<br></p>
+                    <p>54min</p>
+                </div>
+            </div>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/El hombre con mi cara.jpg">
+                <div>
+                    <h3>El hombre con mi cara</h3>
+                    <p>Mientras el destino de Ortega pende de un hilo, Kovacs lanza un golpe de efecto contra los Bancroft y termina cara a cara con un rival inquietante.<br></p>
+                    <p>46min</p>
+                </div>
+            </div>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/El perro rabioso.jpg">
+                <div>
+                    <h3>El perro rabioso</h3>
+                    <p>Kovacs se acerca a una figura del pasado que detona pantallazos de su complicada relación con el Protectorado, la Rebelión y Quell.<br></p>
+                    <p>67min</p>
+                </div>
+            </div>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/Tempestad de pasiones.jpg">
+                <div>
+                    <h3>Tempestad de pasiones</h3>
+                    <p>El mundo de Kovacs se tambalea y pide un infiltrador para agilizar el caso de Bancroft. Ortega corre contra reloj para identificar a la mujer misteriosa.<br></p>
+                    <p>52min</p>
+                </div>
+            </div>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/Alma en la sombra.jpg">
+                <div>
+                    <h3>Alma en la sombra</h3>
+                    <p>Sobre las ruinas de la devastación, Kovacs y sus aliados conjuran un plan temerario para infiltrarse en la Cabeza en las Nubes.<br></p>
+                    <p>54min</p>
+                </div>
+            </div>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/Los asesinos.jpg">
+                <div>
+                    <h3>Los asesinos</h3>
+                    <p>Al mismo tiempo que surge una nueva figura heroica y salen a la luz más secretos, Kovacs queda arrinconado y se prepara para un duelo final en las alturas.<br></p>
+                    <p>51min</p>
+                </div>
+            </div>
+            </form>
+
+            <!--TEMPORADA 2-->
+            <form class="temp2">
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/La dama fantasma.jpg">
+                <div>
+                    <h3>La dama fantasma</h3>
+                    <p>Treinta años después del caso Bancroft, un mat encuentra a Kovacs y le ofrece un trabajo, una funda de última generación y otro espejismo de Quellcrist Falconer.<br></p>
+                    <p>45min</p>
+                </div>
+            </div>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/Pago diferido.jpg">
+                <div>
+                    <h3>Pago diferido</h3>
+                    <p>El coronel Carrera se hace cargo de la investigación del asesinato mientras Kovacs busca a la cazarrecompensas de Axley, y la memoria de Poe empeora.<br></p>
+                    <p>47min</p>
+                </div>
+            </div>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/El callejón de las almas perdidas.jpg">
+                <div>
+                    <h3>El callejón de las almas perdidas</h3>
+                    <p>Kovacs se enfrenta con Carrera y los fantasmas del pasado. Poe le pide ayuda a otra IA. Trepp sigue una pista y se acerca al hombre que tanto busca.<br></p>
+                    <p>53min</p>
+                </div>
+            </div>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/La sombra de una duda.jpg">
+                <div>
+                    <h3>La sombra de una duda</h3>
+                    <p>Durante los festejos del Día de Harlan, Kovacs traza un plan de escape, Quell arma el rompecabezas de su vida, y Poe llega a un callejón sin salida.<br></p>
+                    <p>56min</p>
+                </div>
+            </div>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/Vanidad fatal.jpg">
+                <div>
+                    <h3>Vanidad fatal</h3>
+                    <p>Carrera envía su arma secreta a una misión letal. Kovacs y Trepp sacan a Quell de la ciudad. Poe camina por la cornisa en el mundo virtual.<br></p>
+                    <p>50min</p>
+                </div>
+            </div>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/El cadáver errante.jpg">
+                <div>
+                    <h3>El cadáver errante</h3>
+                    <p>Quell revive lo que pasó en Stronghold mientras guía al clon a través de una cueva subterránea llena de secretos. La gobernadora muestra sus cartas.<br></p>
+                    <p>43min</p>
+                </div>
+            </div>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/Noche en el alma.jpg">
+                <div>
+                    <h3>Noche en el alma</h3>
+                    <p>Quell tiene problemas con su funda, por lo que Poe y la Srta. Sitio la suben a la realidad virtual, donde Kovacs finalmente descubre la verdad sobre ella.<br></p>
+                    <p>49min</p>
+                </div>
+            </div>
+
+            <div class="parrafos" id="episodios">
+                <img src="images/episodios/Ángeles rotos.jpg">
+                <div>
+                    <h3>Ángeles rotos</h3>
+                    <p>Kovacs, Quell y los otros corren para encontrar a Konrad Harlan y detener la catástrofe. El destino del planeta pende de un hilo cada vez más fino.<br></p>
+                    <p>53min</p>
+                </div>
+            </div>
+            </form>
+           
         </section>
     </main>
 

@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
   
+#logo2{
+    display: none;
+}
+
 body {
     font-family: 'Oswald', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.4em;
+    font-size: 1.3rem;
+    line-height: 1.3em;
     margin: 0;
     background: #1e1e1e;
     color: #AFAFAF;
@@ -57,7 +61,6 @@ a {
 video {
     width: 100%;
     padding: 3% 5%;
-    
 }
 
 .main {
@@ -76,7 +79,7 @@ video {
 }
 
 .principal {
-    width: 70%;
+    width: 80%;
     max-width: 1300px;
     margin: auto auto;
     padding: 2%;
@@ -85,8 +88,7 @@ video {
 }
 
 .principal h1 {
-    
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.3;
     color: #8d0606;
     margin-bottom: 1rem;
@@ -96,7 +98,28 @@ video {
     color: #AFAFAF;      
     margin-bottom: 1.6em;
     font-size: 1rem;
-    
+}
+
+#episodios{
+    align-items: center;
+    display: flex;
+}
+
+#episodios img{
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#episodios div{
+    flex: 70%;
+}
+
+#episodios h3{
+    padding: 0 .5em .8em;
+}
+
+#episodios p{
+    padding: 0 .5em 1em;
 }
 
 .parrafos {
@@ -118,7 +141,7 @@ video {
 .parrafos p {
     color: #AFAFAF;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .personajes {
@@ -137,7 +160,7 @@ video {
     border-radius: 10px;
     overflow: hidden;
     width: 550px;
-    height: 700px;
+    height: 550px;
     text-align:left;
     transition: transform 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -179,7 +202,7 @@ video {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1; /* Imagen de fondo */
+    z-index: 1;
 	width: 100%;
     height: 100%;
     
@@ -189,7 +212,7 @@ video {
     position: absolute;
     top: 3%;
     left: 2%;
-    z-index: 2; /* Imagen superpuesta */
+    z-index: 2;
 	width: 85px;
 }
 
@@ -272,7 +295,7 @@ button{
 	margin-top: 10px;
     margin-left: 5%; 	
 	text-transform: uppercase;
-	background-color: #1e1e1e; 
+	background-color: #131313; 
 	border-color: #200000; 
 	border-style:solid; 
 	border-radius: 10px;	
@@ -307,23 +330,48 @@ aside{
 }
 
 aside img{
-    border-radius: 100%;
+    border-radius: 40%;
     width: 80%;
 }
 
-.secundario img{
+.galeria{
+    background-image: url(../images/hexagon-textured.jpg);
+    backdrop-filter: revert;
+    background-size:contain;
+    border-radius: 4px;
+}
+
+.galeria img{
     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
     background:linear-gradient(grey,lightgrey);
-    width:var(--border-width);
-    height:var(--border-height);
-    max-height:292px;
-    max-width:292px;
-    margin-right: -10px;
+    max-height:280px;
+    max-width:280px;
     margin-top: 10px;
+    margin-left: 5px;
+}
+
+select{
+    background:#282828;
+    border: none;
+    color: #AFAFAF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    outline-offset: 3px;
+    padding: 7px 30px 7px 0;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
+    #logo1{
+        display: none;
+    }
+
+    #logo2{
+        display:block;
+    }
+
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -383,7 +431,10 @@ aside img{
 
     aside {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 10px;
+        padding-left: 15%;
+
+        
     }
 
     input, textarea {
@@ -395,9 +446,21 @@ aside img{
         margin-left: 5%;
     }
 
-    .secundario img{
+    .galeria img{
         max-height:250px;
         max-width:250px;
+    }
+    
+    #episodios div{
+        flex: 80%;
+    }
+    
+    #episodios h3{
+       font-size: 75%;
+    }
+    
+    #episodios p{
+        font-size: 75%;
     }
 
 }
@@ -463,9 +526,26 @@ aside img{
         margin-left: 5%;
     }
 
-    .secundario img{
+    .galeria img{
         height:180px;
         max-width:180px;
+    }
+
+    #episodios{
+        align-items: center;
+        display: block;
+    }
+
+    #episodios img{
+        max-width: 150px;
+    }
+    
+    #episodios h3{
+       font-size: 55%;
+    }
+    
+    #episodios p{
+        font-size: 55%;
     }
 
 }

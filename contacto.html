@@ -12,18 +12,23 @@
 
 </head>
 <body>
+    <script type="text/javascript">
+        window.onload = function(){
+            document.getElementById("op4").style.background = '#200000';
+        }
+    </script>
     <header>
         <div class="contenedor">
-            <a href="index.html"><img src="images/altered-carbon-logo-largo.png"Logo Altered Carbon"></a>
+            <a href="index.html"><img id="logo1" src="images/altered-carbon-logo-largo.png" alt ="Logo Altered Carbon"><img id="logo2" src="images/altered-carbon-logo-corto" alt ="Logo Altered Carbon"></a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         <nav id="menu_bar" class="menu">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="personajes.html">Personajes</a></li>
-                <li><a href="episodios.html">Episodios</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="index.html" id="op0">Inicio</a></li>
+                <li><a href="personajes.html" id="op1">Personajes</a></li>
+                <li><a href="Episodios.html" id="op2">Episodios</a></li>
+                <li><a href="galeria.html" id="op3">Galeria</a></li>
+                <li><a href="contacto.html" id="op4">Contacto</a></li>
             </ul>
         </nav>
     </header>
