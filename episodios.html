@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Episodios - Altered Carbon</title>
-    <link rel="icon" type="image/png" href="images/altered_carbon_logo_.png">
+    <link rel="icon" type="image/png" href="images/altered_carbon_logo_favicon.png">
 
 </head>
 <body>
@@ -226,6 +226,30 @@
         <a href="https://www.youtube.com/watch?v=wk5LZtW3zB4" target="_blank" ><img src="images/redes/youtube.png" alt="Youtube"></a>
         <h6>&#169 Todos los derechos reservados. Diseñado por Alvarez Bruno</h6>
     </footer>
+
+    <script type="text/javascript">
+        if ($('#sele').val() == 1)
+    {
+        $(".temp1").css("display","block");
+        $(".temp2").css("display","none");
+    };
+ 
+    $('#sele').change(function() {
+    
+    if ($('#sele').val() == 1)
+    {
+        $(".temp1").css("display","block");
+        $(".temp2").css("display","none");
+    };
+    
+    if ($('#sele').val() == 2)
+    {
+        $(".temp1").css("display","none");
+        $(".temp2").css("display","block");
+    };
+    
+    });
+    </script>
 
     <script type="text/javascript">
         function myFunction() {
