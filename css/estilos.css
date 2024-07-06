@@ -10,8 +10,8 @@
 
 body {
     font-family: 'Oswald', sans-serif;
-    font-size: 1.3rem;
-    line-height: 1.3em;
+    font-size: 1.2rem;
+    line-height: 1.2em;
     margin: 0;
     background: #1e1e1e;
     color: #AFAFAF;
@@ -58,6 +58,11 @@ a {
     text-decoration: none;
 }
 
+p a{
+    color: #8d0707;
+    text-decoration: none;
+}
+
 video {
     width: 100%;
     padding: 3% 5%;
@@ -97,7 +102,6 @@ video {
 .principal p {
     color: #AFAFAF;      
     margin-bottom: 1.6em;
-    font-size: 1rem;
 }
 
 #episodios{
@@ -141,7 +145,6 @@ video {
 .parrafos p {
     color: #AFAFAF;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
 }
 
 .personajes {
@@ -383,32 +386,38 @@ select{
 	header div, header a {
 		flex: 1 0 50%;
 	}
+    
 	header nav {
 		flex-basis: 100%;
 	}
+
 	nav ul {
 		display: none;
 	}
+
 	.icon {
 		display: block;
 		padding-right: 0.6rem;
 		text-align: right;
 	}
+
 	nav.responsive ul {
 		display: block;
 	}
+
 	nav.responsive ul li {
 		display: inline;
 		text-align: center;
 		padding: 0.5rem;
         
 	}
+
 	nav.responsive ul li a {
 		padding-right: 0;
         font-size: 75%;
 	}	
+
     .principal {
-        
         width: 90%;
     }
 
@@ -426,15 +435,12 @@ select{
 
 	video{
 		padding: auto;
-        
 	}
 
     aside {
         width: 100%;
         margin-top: 10px;
         padding-left: 15%;
-
-        
     }
 
     input, textarea {
@@ -494,7 +500,6 @@ select{
 
     .banner-netflix {
         display: none;
-
     }
 
     .banner-netflix .imagen2 {
